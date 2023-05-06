@@ -10,7 +10,7 @@ const Features = () => {
   const [displayedRecipes, setDisplayedRecipes] = useState([]);
 
   useEffect(() => {
-    axios.get('https://lacocina-api.onrender.com/api/v1/recipe/getAllRecipes')
+    axios.get('https://lacocina-api.onrender.com/api/v1/recipe')
       .then(response => {
         setRecipes(response.data.data);
         setIsLoading(false);

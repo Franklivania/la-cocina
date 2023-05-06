@@ -42,12 +42,14 @@ const RecipePage = () => {
       <Navbar />
       
       <div className="container">
+
         <h1>{recipe.title}</h1>
         <img src={recipe.image} alt={recipe.title} />
         <p>Dish Type: {recipe.dishType}</p>
-        <p>Ready in {recipe.readyInMinutes} .minutes</p>
+        <p>Ready in {recipe.readyInMinutes} minutes</p>
         <p>Instructions: {recipe.instructions}</p>
         {/* Render other recipe details as needed */}
+
       </div>
 
       <Footer />

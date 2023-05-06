@@ -8,6 +8,7 @@ import Loading from './Pages/Loading/Loading'
 import Recipes from './Pages/Recipes/Recipes'
 import About from './Pages/About/About'
 import RecipePage from './Pages/RecipePage/RecipePage'
+import SavedRecipes from './Pages/SavedRecipes/SavedRecipes'
 
 function App() {
   const [loaded, setLoaded] = useState(false);
@@ -34,6 +35,7 @@ function App() {
             <Route path='/recipes' element={<Recipes />} />
             <Route path='/about' element={<About />} />
             <Route path='/recipepage/:recipeId' element={<RecipePage />} />
+            <Route path='/saved' element={<SavedRecipes />} />
           </Routes>
         </Router>
       )}
