@@ -97,7 +97,7 @@ const Login = () => {
           // The login failed for some other reason
           toast.error("Login failed");
         }
-        navigate("/recipes");
+        navigate('/recipes')
       })
       .catch((error) => {
         // console.error("Error logging in:", error);
